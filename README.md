@@ -1,4 +1,4 @@
-# Quelques commandes utilié dans la playliste
+# Quelques commandes utiliées dans la playliste
 
 ## Installation de Java et Jenkins 
 
