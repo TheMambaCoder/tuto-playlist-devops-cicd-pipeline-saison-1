@@ -18,7 +18,7 @@ public class DemoDevopsCicdProjectApplication {
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ApiResponse testService() {
-        return new ApiResponse(HttpStatus.OK.value(), "YOUPIIIII I'm running.....", "Prod");
+        return new ApiResponse(HttpStatus.OK.value(), "YOUPIIIII I'm running.....", "Dev");
     }
 
     public static void main(String[] args) {
