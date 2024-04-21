@@ -1,0 +1,22 @@
+---
+- name: Install The app docker image in the dev environment
+  hosts: dev
+  vars:
+    docker_image_prefix: momsboy/devops-cicd-project
+
+  tasks:
+  - name: "suppression de l'image de l'app"
+    shell: "docker rm -f monApp"
+
+  - name: install de l'image docker de l'app
+    shell: "docker run -d --name monApp -p 8080:8080 {{ docker_image_prefix }}:{{ docker_image_tag }}"
+
+  - name: attente de la disponibilite de l'app
+    uri:
+     url: "http://127.0.0.1:8080/test"
+     status_code: 200
+    register: result
+    until: result.status == 200
+    retries: 100
+    delay: 1
+

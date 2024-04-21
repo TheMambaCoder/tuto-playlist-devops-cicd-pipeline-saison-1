@@ -1,0 +1,17 @@
+all:
+  hosts:
+    dev:
+     ansible_host: 192.168.41.170
+     ansible_user: vagrant
+     ansible_private_key_file: /var/lib/jenkins/workspace/id_rsa_jenkins
+     ansible_ssh_common_args: "-o StrictHostKeyChecking=no"
+    stage:
+     ansible_host: 192.168.41.172
+     ansible_user: vagrant
+     ansible_private_key_file: /var/lib/jenkins/workspace/id_rsa_jenkins
+     ansible_ssh_common_args: "-o StrictHostKeyChecking=no"
+    prod:
+     ansible_host: 192.168.41.171
+     ansible_user: vagrant
+     ansible_private_key_file: /var/lib/jenkins/workspace/id_rsa_jenkins
+     ansible_ssh_common_args: "-o StrictHostKeyChecking=no"
