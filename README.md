@@ -4,7 +4,7 @@
 
 ## [Cliquez ici pour voir et s'abonner à la chaine Youtube](https://www.youtube.com/@MambaCoders)
 
-# Présrequis Pour suivre et reprendre étape par étape la playlist
+# Prérequis Pour suivre et reprendre étape par étape la playlist
 
 1. Vous devez avoir VirtualBox ou VMware ou un autre outil de virtualisation installé sur votre machine local
 
