@@ -7,12 +7,18 @@
 # Présrequis Pour suivre et reprendre étape par étape la playlist
 
 1. Vous devez avoir VirtualBox ou VMware ou un autre outil de virtualisation installé sur votre machine local
+
 2. Installer l'outils Vagrant et l'intégré a votre outil de virtualisation déja installé
+
 3. Choisir votre image centos depuis [le site Vagrant cloud](https://app.vagrantup.com/boxes/search) à partir de Centos 7 en filtrant bien en fonction de de votre provider installé sur votre machine local (virtualbox, vmware,vmware_desktop, vmware_fusion etc) et de l'architectur des processeurs de votre PC (amd64 ou arm64)
+
 4. Tester et vérifier que vous étes bien capable de lancer la commande `sudo vagrant up` à partir d'un repertoire donné contenant votre fichier Vagrantfile dans lequel vous avez la définition de votre machine à lancer avec l'image pris depuis [le site Vagrant cloud](https://app.vagrantup.com/boxes/search).
 
-4. Fin, à partir de là vous pouvez adapter votre Fichier Vagrantfile en vous inspirant de mon Vagrantfile pour lancer vos 3 server.
+5. Fin, à partir de là vous pouvez adapter votre Fichier Vagrantfile en vous inspirant de mon Vagrantfile pour lancer vos 3 server.
 
+## Autre methode
+
+Vous pouvez aussi simplement ignorer vagrant et installer 3 machines virtuelle avec des images Centos sur votre virtuelBox ou VMware classique et ensuite vous travaillez avec vos 3 servers.
 
 # Quelques commandes utiliées dans la playliste
 
